@@ -1,0 +1,110 @@
+<html>
+<head> 
+    <title>AUDIO</title>
+    <link rel="stylesheet" href="../style_page/style_page.css" type="text/css">
+    <style type="text/css">
+        header, nav, main, footer{
+            width: 100%;
+        }
+        main{
+            text-align: center;
+        }
+        section{
+            width: 40%;
+            height:200px;
+            display: inline-block;
+            margin: 10px;
+            text-align: left;
+            overflow:auto;  
+               }
+        audio, iframe{
+            display: block;
+            margin: 30px auto;
+        }
+        p{
+           margin-bottom: 30px;
+          }  
+        p a:visited{
+            color: #201E43;
+        }
+        p a:link{
+            color: #EEEEEE;
+            font-weight: bolder;
+        }
+        p a: active {
+            color:orange;
+        }
+        ul li{
+            background-color: #EEEEEE;
+            color: #201E43;
+            padding: 10px;
+            border-radius: 10px;
+            width: 75px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #201E43;
+        }
+        ul a:link, ul a: visited{
+            color:#201e43;
+        }      
+       nav li:hover, nav li a:hover{
+            background-color:#001f36;
+            font-weight:bolder;
+           color: #EEEEEE
+        }
+    </head>
+    </style>
+    <body>
+    <header>
+        <h1>CANCIONES BONITAS (audio en html)</h1>
+        </header>
+    <nav>
+        <ul>
+        <li><a href="../index.html">Formatos</a></li>
+        <li><a href="../listas/Listas.html">Listas</a></li>
+        <li><a href="../enlaces/enlaces.html">Enlaces</a></li>
+        <li><a href="../tablas/tablas.html">Tablas</a></li>
+        <li><a href="../imágenes/imagenes.html">Imágenes</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="../video/video.html" >Video</a></li>
+        <li><a href="../formularios/formularios.html">Formularios</a></li> 
+        </ul> 
+        </nav>
+    <main>
+        <section>
+        <h2> SOLO TÚ (Audio simple)</h2>
+        <p>Esta canción la defino al día de hoy como una de mis favoritas de Daniel, me estás matando. Disfruto enormemente escucharla y cantarla. Es una canción muy romántica y el romanticismo me gusta porque saca un lado de nosotros que es fascinante. Desbordarte de amor por alguien y que sea recíproco es maravilloso. </p>
+            <audio controls> <source src="audios/solo_tú.mp3" type="audio/mp3">
+            </audio>
+        </section>
+         <section>
+        <h2>YO ESPERARÉ (Audio con reproducción automática y muteado)</h2>
+        <p>Esta es otra de Daniel, me estás matando. En esta se habla de como alguien se muere de amor por otra persona y confiesa que la esperará, así huya de su lado él seguirá su sombra, es decir, se irá con esa persona también todo su amor. Me gusta el final porque termina con un <b>"...Yo esperaré, pero si quieres te amo de una vez"</b></p>
+             <audio controls muted autoplay>
+             <source src="audios/yo_esperaré.mp3" type="audio/mp3">
+             </audio>
+        </section>  
+         <section>
+        <h2>AGUA CALIENTE (Audio con reproducción en ciclo) </h2>
+        <p>Es una canción que podria escucharla en loop de por vida. La conocí hace un año aproximadamente y se la dediqué a una persona que es sumamente especial en mi vida, a pesar de que ya no compartamos una vida amorosa juntos. Esta canción me gusta porque expresa justamente mis sentimientos y las palabras que en su momento quería que él supiera, y pues no me arrepiento, ahora tiene un valor más grande gracias a esa dedicatoria personal.</p>
+              <audio controls loop>
+            <source src="audios/agua_caliente.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        <section>
+        <h2>EL PRINCIPITO (Audio de banco de audios) </h2>
+        <p> Es algo sorprendente pero jamás leí la novela "El Principito", aunque sea demasiado famosa y popular. No sé la razón del porqué no la he leído o escuchado pero justamente creo que ya llegó el momento de saber la historia. </p>
+        <iframe src="https://www.ivoox.com/player_ej_38846_6_1.html?c1=470b00" width="80%" height="200" frameborder="0" allowfullscreen="" scrolling="no" loading="lazy"></iframe>    
+        </section>
+        <section>
+        <h2>LA MÁQUINA PERSONA (Audio de Spotify)</h2>
+        <p>Este álbum lo conocí hace aproximadamente un año y debo confesar que al incio no me gustaba tanto, ni el artista en general. Poco a poco lo empecé a escuchar más y no sé en qué momento, pero ahora ya es uno de mis favoritos. Me gusta mucho la forma en que las canta, sus letras y el ritmo de toda las canciones, son muy bonitas y expresa emociones y pensamientos con los que me puedo identificar. </p>
+        <iframe style="border-radius:5px" src="https://open.spotify.com/embed/album/4CKMDfvdrGb71J8GoUqDPP?utm_source=generator" width="90%" height="390" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </section>
+        </main>
+    </body>
+        </head>
+    <footer><h5> Elaborado por Yannet Mora Montiel</h5>
+    </footer>
+</html>

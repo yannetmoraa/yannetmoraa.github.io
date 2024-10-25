@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios en HTML</title>
+<link href="../style_page/style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>FORMULARIO PARA CONOCERTE (formularios en html)</h1>
+</header>
+<nav>
+  <ul>
+	    <li><a href="../index.html">Formatos</a></li>
+        <li><a href="../listas/Listas.html">Listas</a></li>
+        <li><a href="../enlaces/enlaces.html">Enlaces</a></li>
+        <li><a href="../tablas/tablas.html">Tablas</a></li>
+        <li><a href="../imágenes/imagenes.html">Imágenes</a></li>
+        <li><a href="../audio/audio.html">Audio</a></li>
+        <li><a href="../video/video.html">Video</a></li>
+        <li><a href="formularios.html">Formularios</a></li> 
+	</ul>
+</nav>
+<main>
+  <section> 
+    <h2> INGRESO (Formulario  de ingreso)</h2>
+    <p> Texto, numérico y submit</p>
+      <form id="form1" name="form1" method="get">
+	  <label for="nombre de usuario">Nombre de usuario:</label>
+      <input name="usuario" type="text" id="usuario" maxlength="10">
+      <label for="contraseña">Contraseña:</label>
+      <input name="contraseña" type="password" id="contraseña" maxlength="5">
+      <input type="submit" name="submit" id="submit" value="Enviar">
+</form>
+  </section>
+	  <section>
+	    <h2>FORMULARIO UNIVERSITARIO (Formulario 2)</h2>
+	    <p>Texto, checkboxes (grupo de casillas de verificación), seleccionar, radio buttons (grupo de opciones).</p>
+<form id="form2" name="form2" method="get">
+      <label for="nombre">Nombre:&nbsp;</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido">
+      <label>Género:</label>
+      <p>
+        <label>
+          <input type="radio" name="g&eacute;nero" value="femenino" id="geacutenero_0">
+        FEMENINO</label>
+      
+        <label>
+          <input type="radio" name="g&eacute;nero" value="masculino" id="geacutenero_1">
+          MASCULINO</label>
+      
+        <label>
+          <input type="radio" name="g&eacute;nero" value="otro" id="geacutenero_2">
+          OTRO</label>
+        <br>
+<br>
+      </p>
+<label for="edad">Edad:</label>
+      <input name="edad" type="number" id="edad" max="99" min="18">
+      <label for="semestre">Semestre que estás cursando :</label>
+      <select name="semestre" id="semestre">
+        <option value="1ero">1ERO</option>
+        <option value="2do">2DO</option>
+        <option value="3ro">3RO</option>
+        <option value="4to">4TO</option>
+        <option value="5to">5TO</option>
+        <option value="6to">6TO</option>
+        <option value="7mo">7MO</option>
+        <option value="8vo">8VO</option>
+        <option value="9no">9NO</option>
+        <option value="10mo">10MO</option>
+        <option value="11vo">11VO</option>
+        <option value="12vo">12VO</option>
+      </select>
+      <label>Disponibilidad de horario:</label>
+      <p>
+        <label>
+          <input type="checkbox" name="Disponibilidad de horario" value="mañana" id="Disponibilidaddehorario_0">
+        MAÑANA</label>
+          
+        <label>
+          <input type="checkbox" name="Disponibilidad de horario" value="medio día" id="Disponibilidaddehorario_1">
+          MEDIO DÍA</label>
+          
+        <label>
+          <input type="checkbox" name="Disponibilidad de horario" value="tarde" id="Disponibilidaddehorario_2">
+          TARDE</label>
+        <label>
+          <input type="checkbox" name="Disponibilidad de horario" value="noche" id="Disponibilidaddehorario_3">
+          NOCHE</label>
+      </p>
+      <input type="submit" name="submit2" id="submit2" value="Enviar">
+	    
+      </form>
+  </section>
+	  <section> 
+	    <h2>FORMULARIO PARA CONOCERTE (Formulario 10 preguntas)</h2>
+		  <p> Texto, fecha, de selección, color, subir archivo, rango, hora,celular,grupo de opción (radio buttons) </p>
+		  <ol>
+	    <form id="form3" name="form3" method="post">
+	      <li><label for="apodo">¿Cuál es tu apodo favorito?&nbsp;</label></li>
+          <input name="apodo" type="text" required="required" id="apodo" maxlength="15">
+          <li><label for="fecha">¿Cuándo es tu cumpleaños?&nbsp;</label></li>
+          <input name="fecha" type="date" required="required" id="fecha" max="2011-01-01" min="1940-01-01">
+          <li><label for="signo">¿Cúál es tu signo zodiacal?</label></li>
+          <select name="signo" required="required" id="signo">
+            <option value="aries">ARIES</option>
+            <option value="tauro">TAURO</option>
+            <option value="géminis">GÉMINIS</option>
+            <option value="cáncer">CÁNCER</option>
+            <option value="leo">LEO</option>
+            <option value="virgo">VIRGO</option>
+            <option value="libra">LIBRA</option>
+            <option value="escorpio">ESCORPIO</option>
+            <option value="sagitario">SAGITARIO</option>
+            <option value="capricornio">CAPRICORNIO</option>
+            <option value="acuario">ACUARIO</option>
+            <option value="piscis">PISCIS</option>
+          </select>
+          <li><label>¿Te identificas con tu signo?</label></li>
+          <p>
+            <label>
+              <input type="radio" name="&iquest;Te identificas con tu signo?" value="sí" id="iquestTeidentificascontusigno_0">
+              SÍ</label>
+            <label>
+              <input type="radio" name="&iquest;Te identificas con tu signo?" value="no" id="iquestTeidentificascontusigno_1">
+              NO</label>
+            <br>
+          </p>
+          <li><label for="color">¿Cuál es tu color menos favorito?&nbsp; Selecciónalo&nbsp;&nbsp;</label>
+          </li>
+          <input type="color" name="color" id="color">
+          <li><label for="archivo">¿Cuál es tu&nbsp;foto favorita? Adjúntala a continuación&nbsp;</label>
+          </li>
+          <input name="archivo" type="file" required="required" id="archivo">
+          <li><label for="rango">¿Qué tan paciente te consideras? selecciona tu nivel aproximado deslizando&nbsp;la siguiente barra.&nbsp;&nbsp;</label>
+          </li>
+          <input name="rango" type="range" id="rango" max="100" min="0" step="0">
+          <li><label for="tiempo">¿A qué hora del día le dedicas a estar en redes sociales?&nbsp; &nbsp; &nbsp;</label>
+          <input name="tiempo" type="time" autofocus="autofocus" required="required" id="tiempo" max="24:59:00" min="00:0:01" value="00:30:00">
+          <li><label for="celular">¿Cuál es tu número deWhatsApp?</label>
+          <input name="celular" type="tel" required="required" id="celular" maxlength="10" 
+          </li>
+          <li><label>¿Cuáles son tus redes sociales favoritas?&nbsp; &nbsp;&nbsp;</label></li>
+          <p>
+            <b>
+            <label>
+              <input type="checkbox" name="redes sociales" value="WhatsApp" id="redessociales_0">
+              WHATSAPP</label>
+			  <br>
+            <label>
+              <input type="checkbox" name="redes sociales" value="Facebook" id="redessociales_1">
+              FACEBOOK</label>
+            <br>
+            <label>
+              <input type="checkbox" name="redes sociales" value="Instagram" id="redessociales_2">
+              INSTAGRAM</label>
+            <br>
+            <label>
+              <input type="checkbox" name="redes sociales" value="Tiktok" id="redessociales_3">
+              TIKTOK</label>
+            <br>
+            <label>
+              <input type="checkbox" name="redes sociales" value="X" id="redessociales_4">
+              X</label>
+            <br>
+            <label>
+              <input type="checkbox" name="redes sociales" value="Pinterest" id="redessociales_5">
+              PINTEREST</label>
+            <br>
+            <label>
+              <input type="checkbox" name="redes sociales" value="Youtube" id="redessociales_6">
+              YOUTUBE</label>
+            <br>
+            <label>
+              <input type="checkbox" name="redes sociales" value="Snapchat" id="redessociales_7">
+              SNAPCHAT</label>
+            <br>
+            <label>
+              <input name="redes sociales" type="checkbox" value="Messenger" id="redessociales_8">
+              MESSENGER</label>
+            <input name="submit3" type="submit" id="submit3" formmethod="GET" value="Enviar">
+			  
+          </p>
+	      
+        </form>
+		  </ol>
+     </section>
+    </main>
+<footer>Elaborado por Yannet Mora Montiel </footer>
+</body>
+</html>
